@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Security Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="~/css/main.css">
+    @RenderSection("CssLink", required: false)
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="@ViewBag.ClassHeader spacing">
+        <ul class="navbar_list">
+            <li class="brand_name">
+                <a class="white_text" asp-action="Home">SECURITY DASHBOARD</a>
+            </li>
+            <li>
+                <ul class="page_links">
+                    <li><a class="@ViewBag.ClassHome white_text" asp-action="Home">Home</a></li>
+                    <li><a class="@ViewBag.ClassAboutUs white_text" asp-action="AboutUs">About us</a></li>
+                    <li class="profile">
+                        <div class="profile_pic_container" id="profileButton">
+                            <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
+                        </div>
+                        <div class="profile_options info_card" id="profileOptions">
+                            <p id="username">Admin</p>
+                            <a class="button" asp-action="Index">Sign Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    @RenderBody()
+
+    @RenderSection("Script", required: false)
+    <script src="~/js/index.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

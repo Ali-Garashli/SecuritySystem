@@ -1,0 +1,102 @@
+body {
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_title {
+  margin: 30px 0 0;
+  top: 0px;
+  font-size: 24px;
+}
+
+.users_list {
+  width: 600px;
+  margin: 30px 100px;
+}
+@media (max-width: 490px) {
+  .users_list {
+    margin: 30px 0;
+    max-width: 600px;
+  }
+}
+.users_list .user_item {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+@media (max-width: 470px) {
+  .users_list .user_item {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+  }
+}
+.users_list .user_item .user_info {
+  display: grid;
+  grid-template-areas: "img username" "img password";
+  align-items: center;
+  gap: 10px;
+}
+.users_list .user_item .user_info .profile_pic_container {
+  grid-area: img;
+  position: relative;
+  margin-right: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.users_list .user_item .user_info .profile_pic_container .profile_pic {
+  width: 100%;
+  height: 100%;
+}
+.users_list .user_item .user_info .profile_pic_edit_cont:hover {
+  border-color: rgb(178.5, 178.5, 178.5);
+  transition: all 0.1s linear;
+}
+.users_list .user_item .user_info .profile_pic_edit_cont:hover .profile_pic {
+  filter: brightness(80%);
+  transition: all 0.1s linear;
+}
+.users_list .user_item .user_info .input_container {
+  display: flex;
+  gap: 5px;
+}
+.users_list .user_item .user_info .input_container input {
+  height: 20px;
+  width: 150px;
+}
+.users_list .user_item .buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.users_list .user_item .buttons .edit_button:hover {
+  cursor: pointer;
+}
+.users_list .user_item .buttons .edit_button:hover path {
+  stroke: #ED7542;
+}
+.users_list .user_item .buttons .confirm_button {
+  display: none;
+}
+.users_list .user_item .buttons .confirm_button:hover {
+  cursor: pointer;
+  fill: green;
+}
+.users_list .user_item .buttons .delete_button:hover {
+  cursor: pointer;
+}
+.users_list .user_item .buttons .delete_button:hover path {
+  stroke: rgb(201, 0, 0);
+}
+
+/*# sourceMappingURL=view_users.css.map */

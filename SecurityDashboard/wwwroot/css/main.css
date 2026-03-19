@@ -1,0 +1,205 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #F9F7F7;
+}
+
+.hidden {
+    display: none;
+}
+
+.spacing {
+  padding: 0 100px;
+}
+
+.white_text {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.1s linear;
+}
+.white_text:visited {
+  color: white;
+}
+.white_text:hover {
+  color: rgb(178.5, 178.5, 178.5);
+}
+
+.highlighted {
+  color: #ED7542;
+}
+.highlighted:visited {
+  color: #ED7542;
+}
+.highlighted:hover {
+  color: #F2A784;
+}
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.status_safe {
+  color: green;
+}
+
+.status_unsafe {
+  color: orange;
+}
+
+.status_dangerous {
+  color: red;
+}
+
+.button {
+  background-color: #ED7542;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.1s linear;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(241.4347826087, 151, 112.5652173913);
+}
+.button:visited {
+  color: white;
+}
+.button:active {
+  transition: all 1ms linear;
+  background-color: #ED7542;
+}
+
+.serious_button {
+  background-color: #C95C54;
+}
+.serious_button:hover {
+  cursor: pointer;
+  background-color: rgb(177.84, 64.48, 56.16);
+}
+.serious_button:active {
+  transition: all 1ms linear;
+  background-color: rgb(139.08, 50.4266666667, 43.92);
+}
+
+.card_title {
+  font-size: 20px;
+  color: #5F2E19;
+  background-color: #F9DBCD;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  top: -40px;
+  margin-bottom: -25px;
+}
+
+header {
+  background-color: #272D33;
+}
+@media (max-width: 650px) {
+  header {
+    padding: 0 50px !important;
+  }
+}
+header .navbar_list {
+  height: 80px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  header .navbar_list {
+    height: 150px;
+  }
+}
+header .navbar_list .brand_name {
+  width: 0;
+}
+header .navbar_list .page_links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 550px) {
+  header .navbar_list .page_links {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+header .navbar_list .page_links .profile .profile_pic_container {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+header .navbar_list .page_links .profile .profile_pic_container .profile_pic {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+header .navbar_list .page_links .profile .profile_pic_container:hover {
+  border-color: rgb(178.5, 178.5, 178.5);
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+header .navbar_list .page_links .profile .profile_pic_container:hover .profile_pic {
+  filter: brightness(80%);
+  transition: all 0.1s linear;
+}
+header .navbar_list .page_links .profile .profile_options {
+  position: absolute;
+  top: 70px;
+  right: 120px;
+  display: none;
+  z-index: 1;
+  border-top-right-radius: 0;
+}
+header .navbar_list .page_links .profile .profile_options p {
+  pointer-events: none;
+}
+@media (max-width: 550px) {
+  header .navbar_list .page_links .profile .profile_options {
+    right: 120px;
+    top: 30px;
+  }
+}
+
+#dialogContainer {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+}
+#dialogContainer #dialogWindow {
+  border: none;
+  position: relative;
+  top: -80px;
+}
+#dialogContainer .dialog_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

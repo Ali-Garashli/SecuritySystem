@@ -1,0 +1,166 @@
+﻿@{
+    ViewData["Title"] = "View users";
+}
+
+@section CssLink {
+    <link rel="stylesheet" href="~/css/view_users.css">
+}
+
+@section Script {
+    <script src="../js/viewUsers.js"></script>
+}
+
+<main>
+    <h2 class="card_title">Users</h2>
+
+    <ul class="users_list">
+        <li class="user_item info_card">
+            <div class="user_info">
+                <div class="profile_pic_container">
+                    <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
+                </div>
+                <p class="username"><b>Name: </b>user1</p>
+                <p class="password"><b>Password: </b>P@ssw0rd</p>
+            </div>
+
+            <div class="buttons">
+                <svg class="edit_button" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2799 6.40005L11.7399 15.94C10.7899 16.89 7.96987 17.33 7.33987 16.7C6.70987 16.07 7.13987 13.25 8.08987 12.3L17.6399 2.75002C17.8754 2.49308 18.1605 2.28654 18.4781 2.14284C18.7956 1.99914 19.139 1.92124 19.4875 1.9139C19.8359 1.90657 20.1823 1.96991 20.5056 2.10012C20.8289 2.23033 21.1225 2.42473 21.3686 2.67153C21.6147 2.91833 21.8083 3.21243 21.9376 3.53609C22.0669 3.85976 22.1294 4.20626 22.1211 4.55471C22.1128 4.90316 22.0339 5.24635 21.8894 5.5635C21.7448 5.88065 21.5375 6.16524 21.2799 6.40005V6.40005Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11 4H6C4.93913 4 3.92178 4.42142 3.17163 5.17157C2.42149 5.92172 2 6.93913 2 8V18C2 19.0609 2.42149 20.0783 3.17163 20.8284C3.92178 21.5786 4.93913 22 6 22H17C19.21 22 20 20.2 20 18V13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="confirm_button" fill="#000000" width="30px" height="30px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Approved">
+                <g>
+                <path d="M16,1C7.729,1,1,7.729,1,16s6.729,15,15,15s15-6.729,15-15S24.271,1,16,1z M16,29C8.832,29,3,23.168,3,16S8.832,3,16,3    s13,5.832,13,13S23.168,29,16,29z" />
+                <path d="M23.317,10.27l-10.004,9.36l-4.629-4.332c-0.403-0.377-1.035-0.356-1.413,0.047c-0.377,0.403-0.356,1.036,0.047,1.413    l5.313,4.971c0.192,0.18,0.438,0.27,0.683,0.27s0.491-0.09,0.683-0.27l10.688-10c0.403-0.377,0.424-1.01,0.047-1.413    C24.353,9.913,23.719,9.892,23.317,10.27z" />
+                            </g>
+                        </g>
+                <g id="Approved_1_" />
+                <g id="File_Approve" />
+                <g id="Folder_Approved" />
+                <g id="Security_Approved" />
+                <g id="Certificate_Approved" />
+                <g id="User_Approved" />
+                <g id="ID_Card_Approved" />
+                <g id="Android_Approved" />
+                <g id="Privacy_Approved" />
+                <g id="Approved_2_" />
+                <g id="Message_Approved" />
+                <g id="Upload_Approved" />
+                <g id="Download_Approved" />
+                <g id="Email_Approved" />
+                <g id="Data_Approved" />
+                    </svg>
+                <svg class="delete_button" width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </li>
+        <li class="user_item info_card">
+            <div class="user_info">
+                <div class="profile_pic_container">
+                    <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
+                </div>
+                <p class="username"><b>Name: </b>user1</p>
+                <p class="password"><b>Password: </b>P@ssw0rd</p>
+            </div>
+
+            <div class="buttons">
+                <svg class="edit_button" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2799 6.40005L11.7399 15.94C10.7899 16.89 7.96987 17.33 7.33987 16.7C6.70987 16.07 7.13987 13.25 8.08987 12.3L17.6399 2.75002C17.8754 2.49308 18.1605 2.28654 18.4781 2.14284C18.7956 1.99914 19.139 1.92124 19.4875 1.9139C19.8359 1.90657 20.1823 1.96991 20.5056 2.10012C20.8289 2.23033 21.1225 2.42473 21.3686 2.67153C21.6147 2.91833 21.8083 3.21243 21.9376 3.53609C22.0669 3.85976 22.1294 4.20626 22.1211 4.55471C22.1128 4.90316 22.0339 5.24635 21.8894 5.5635C21.7448 5.88065 21.5375 6.16524 21.2799 6.40005V6.40005Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11 4H6C4.93913 4 3.92178 4.42142 3.17163 5.17157C2.42149 5.92172 2 6.93913 2 8V18C2 19.0609 2.42149 20.0783 3.17163 20.8284C3.92178 21.5786 4.93913 22 6 22H17C19.21 22 20 20.2 20 18V13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="confirm_button" fill="#000000" width="30px" height="30px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Approved">
+                <g>
+                <path d="M16,1C7.729,1,1,7.729,1,16s6.729,15,15,15s15-6.729,15-15S24.271,1,16,1z M16,29C8.832,29,3,23.168,3,16S8.832,3,16,3    s13,5.832,13,13S23.168,29,16,29z" />
+                <path d="M23.317,10.27l-10.004,9.36l-4.629-4.332c-0.403-0.377-1.035-0.356-1.413,0.047c-0.377,0.403-0.356,1.036,0.047,1.413    l5.313,4.971c0.192,0.18,0.438,0.27,0.683,0.27s0.491-0.09,0.683-0.27l10.688-10c0.403-0.377,0.424-1.01,0.047-1.413    C24.353,9.913,23.719,9.892,23.317,10.27z" />
+                            </g>
+                        </g>
+                <g id="Approved_1_" />
+                <g id="File_Approve" />
+                <g id="Folder_Approved" />
+                <g id="Security_Approved" />
+                <g id="Certificate_Approved" />
+                <g id="User_Approved" />
+                <g id="ID_Card_Approved" />
+                <g id="Android_Approved" />
+                <g id="Privacy_Approved" />
+                <g id="Approved_2_" />
+                <g id="Message_Approved" />
+                <g id="Upload_Approved" />
+                <g id="Download_Approved" />
+                <g id="Email_Approved" />
+                <g id="Data_Approved" />
+                    </svg>
+                <svg class="delete_button" width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </li>
+        <li class="user_item info_card">
+            <div class="user_info">
+                <div class="profile_pic_container">
+                    <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
+                </div>
+                <p class="username"><b>Name: </b>user1</p>
+                <p class="password"><b>Password: </b>P@ssw0rd</p>
+            </div>
+
+            <div class="buttons">
+                <svg class="edit_button" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2799 6.40005L11.7399 15.94C10.7899 16.89 7.96987 17.33 7.33987 16.7C6.70987 16.07 7.13987 13.25 8.08987 12.3L17.6399 2.75002C17.8754 2.49308 18.1605 2.28654 18.4781 2.14284C18.7956 1.99914 19.139 1.92124 19.4875 1.9139C19.8359 1.90657 20.1823 1.96991 20.5056 2.10012C20.8289 2.23033 21.1225 2.42473 21.3686 2.67153C21.6147 2.91833 21.8083 3.21243 21.9376 3.53609C22.0669 3.85976 22.1294 4.20626 22.1211 4.55471C22.1128 4.90316 22.0339 5.24635 21.8894 5.5635C21.7448 5.88065 21.5375 6.16524 21.2799 6.40005V6.40005Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11 4H6C4.93913 4 3.92178 4.42142 3.17163 5.17157C2.42149 5.92172 2 6.93913 2 8V18C2 19.0609 2.42149 20.0783 3.17163 20.8284C3.92178 21.5786 4.93913 22 6 22H17C19.21 22 20 20.2 20 18V13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="confirm_button" fill="#000000" width="30px" height="30px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Approved">
+                <g>
+                <path d="M16,1C7.729,1,1,7.729,1,16s6.729,15,15,15s15-6.729,15-15S24.271,1,16,1z M16,29C8.832,29,3,23.168,3,16S8.832,3,16,3    s13,5.832,13,13S23.168,29,16,29z" />
+                <path d="M23.317,10.27l-10.004,9.36l-4.629-4.332c-0.403-0.377-1.035-0.356-1.413,0.047c-0.377,0.403-0.356,1.036,0.047,1.413    l5.313,4.971c0.192,0.18,0.438,0.27,0.683,0.27s0.491-0.09,0.683-0.27l10.688-10c0.403-0.377,0.424-1.01,0.047-1.413    C24.353,9.913,23.719,9.892,23.317,10.27z" />
+                            </g>
+                        </g>
+                <g id="Approved_1_" />
+                <g id="File_Approve" />
+                <g id="Folder_Approved" />
+                <g id="Security_Approved" />
+                <g id="Certificate_Approved" />
+                <g id="User_Approved" />
+                <g id="ID_Card_Approved" />
+                <g id="Android_Approved" />
+                <g id="Privacy_Approved" />
+                <g id="Approved_2_" />
+                <g id="Message_Approved" />
+                <g id="Upload_Approved" />
+                <g id="Download_Approved" />
+                <g id="Email_Approved" />
+                <g id="Data_Approved" />
+                    </svg>
+                <svg class="delete_button" width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14 12V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </li>
+    </ul>
+
+    <div id="dialogContainer">
+        <dialog id="dialogWindow" class="info_card">
+            <p>Are you sure you want to disarm the system?</p>
+            <div class="dialog_buttons">
+                <button id="cancelDialogButton" class="button">Cancel</button>
+                <button id="confirmDialogButton" class="serious_button button">Confirm</button>
+            </div>
+        </dialog>
+    </div>
+</main>

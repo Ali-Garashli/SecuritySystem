@@ -1,0 +1,122 @@
+.info_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "sensors sensors history" "system users history";
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 40px 20px;
+  align-items: start;
+  padding: 30px 50px;
+  position: relative;
+}
+@media (max-width: 1320px) {
+  main {
+    grid-template-areas: "sensors sensors" "system users" "history history";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 610px) {
+  main {
+    grid-template-areas: "sensors" "system" "users" "history";
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    padding: 30px 0;
+  }
+}
+main #sensors {
+  grid-area: sensors;
+  padding: 20px 80px 50px;
+}
+@media (max-width: 600px) {
+  main #sensors {
+    padding: 20px 20px 50px;
+  }
+}
+main #sensors .sensor_info_header p {
+  font-weight: 400 !important;
+}
+main #sensors .sensor_info {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+main #sensors .sensor_info p {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 720px) {
+  main #sensors .sensor_info {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+main #alarmSystem {
+  grid-area: system;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #alarmSystem .disarm_container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 22px;
+}
+main #alarmSystem .disarm_container .disarm_label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+main #userCRUD {
+  grid-area: users;
+  padding-bottom: 38px;
+}
+main #userCRUD .btn_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+main #history {
+  grid-area: history;
+}
+main #history .history_labels, main #history .history_item {
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+@media (max-width: 610px) {
+  main #history .history_labels, main #history .history_item {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  main #history .history_labels, main #history .history_item {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+main #history .history_labels {
+  background-color: rgb(210.6923076923, 220.5384615385, 235.3076923077);
+  padding: 10px;
+  margin-bottom: -5px;
+  border-radius: 10px 10px 0 0;
+}
+main #history .history_item:nth-child(even) {
+  background-color: #F6F8FB;
+  padding: 10px;
+}
+main #history .history_item:last-child {
+  border-radius: 0 0 10px 10px;
+}
+main #history .info_list {
+  max-height: 380px;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=home.css.map */

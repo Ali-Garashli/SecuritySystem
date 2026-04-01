@@ -1,0 +1,28 @@
+﻿@model SignInViewModel
+
+@{
+    ViewData["Title"] = "Sign in";
+    ViewBag.ClassHeader = "hidden";
+}
+
+@section CssLink {
+    <link rel="stylesheet" href="~/css/sign_in.css">
+}
+
+<form id="sign_in_form" asp-action="SignIn" method="post" class="info_card">
+    <div class="profile_pic_upload_cont">
+        <img class="profile_pic" src="./img/profile_pic_icon.png" alt="profile picture">
+    </div>
+
+    <input asp-for="Username" type="text" class="input_box" placeholder="Username">
+
+    <input asp-for="Password" type="password" class="input_box" placeholder="Password">
+
+    <div asp-validation-summary="All" class="error_msg"></div>
+
+    <button class="button">Sign In</button>
+
+    <p class="create_account">Forgot your password?</p>
+    <p class="create_account">Don't have an account?</p>
+    <a href="mailto:aligarashin@gmail.com" class="create_account contact_admin">Contact admin</a>
+</form>

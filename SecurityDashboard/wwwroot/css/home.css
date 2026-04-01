@@ -89,16 +89,11 @@ main #history .history_labels, main #history .history_item {
   width: 100%;
   padding: 0 10px;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 @media (max-width: 610px) {
   main #history .history_labels, main #history .history_item {
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-}
-@media (max-width: 520px) {
-  main #history .history_labels, main #history .history_item {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
 main #history .history_labels {

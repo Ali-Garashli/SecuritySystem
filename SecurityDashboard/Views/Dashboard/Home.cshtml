@@ -1,0 +1,122 @@
+﻿@model DashboardViewModel
+
+@{
+    ViewData["Title"] = "Home";
+    ViewBag.ClassHome = "highlighted";
+}
+
+@section CssLink {
+    <link rel="stylesheet" href="~/css/home.css">
+}
+
+@section Script {
+    <script src="~/js/home.js" asp-append-version="true"></script>
+}
+
+<main>
+    <!-- SENSORS -->
+    <section id="sensors" class="info_card">
+        <h3 class="card_title">Sensors</h3>
+        <ul class="info_list">
+            <li class="sensor_info sensor_info_header">
+                <p>Sensor</p>
+                <p>Reading</p>
+                <p>Status</p>
+            </li>
+            <li class="sensor_info">
+                <p>Gas</p>
+                <p>139</p>
+                <p class="status_dangerous">Dangerous</p>
+            </li>
+            <li class="sensor_info">
+                <p>Flame</p>
+                <p>104</p>
+                <p class="status_safe">Safe</p>
+            </li>
+            <li class="sensor_info">
+                <p>Motion</p>
+                <p>96</p>
+                <p class="status_safe">Safe</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- SYSTEM -->
+    @if (User.IsInRole("Admin")) {
+        <section id="alarmSystem" class="info_card">
+            <h3 class="card_title">System</h3>
+
+            <div class="disarm_container">
+                <button class="serious_button button" name="button" id="disarmButton">Disarm System</button>
+                <label class="disarm_label" for="button">* The alarm will not trigger when the system disarmed</label>
+            </div>
+        </section>
+
+        <div id="dialogContainer">
+            <dialog id="dialogWindow" class="info_card">
+                <p>Are you sure you want to disarm the system?</p>
+                <form method="post" asp-action="Home" class="dialog_buttons">
+                    <button value="false" name="cancel" id="cancelDialogButton" class="button">
+                        Cancel
+                    </button>
+                    <button value="true" name="confirm" type="submit"
+                            id="confirmDialogButton" class="serious_button button">
+                        Confirm
+                    </button>
+                </form>
+            </dialog>
+        </div>
+    }
+
+
+    <!-- USER CRUD -->
+    @if (User.IsInRole("Admin")) {
+        <section id="userCRUD" class="info_card">
+            <h3 class="card_title">Users</h3>
+
+            <div class="btn_container">
+                <a asp-controller="User" asp-action="Add" class="button">Add User</a>
+                <a asp-controller="User" asp-action="ViewUsers" class="button">View Users</a>
+            </div>
+        </section>
+    }
+
+    <!-- HISTORY -->
+    <section id="history" class="info_card">
+        <h3 class="card_title">History</h3>
+
+        <div class="history_labels">
+            <p>Date</p>
+            <p>Sensor</p>
+            <p>Reading</p>
+            <p>Status</p>
+        </div>
+
+        <ol class="info_list">
+            <li class="history_item">
+                <p>2026-03-03 10:34:29</p>
+                <p>Gas</p>
+                <p>194</p>
+                <p>Unsafe</p>
+            </li>
+            <li class="history_item">
+                <p>2026-03-04 08:38:07</p>
+                <p>Flame</p>
+                <p>200</p>
+                <p>Unsafe</p>
+            </li>
+            <li class="history_item">
+                <p>2026-02-28 14:47:22</p>
+                <p>Gas</p>
+                <p>200</p>
+                <p>Dangerous</p>
+            </li>
+            <li class="history_item">
+                <p>2026-03-03 10:34:29</p>
+                <p>Gas</p>
+                <p>194</p>
+                <p>Unsafe</p>
+            </li>
+        </ol>
+    </section>
+</main>

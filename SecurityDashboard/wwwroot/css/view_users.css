@@ -40,7 +40,7 @@ main {
 }
 .users_list .user_item .user_info {
   display: grid;
-  grid-template-areas: "img username" "img password";
+  grid-template-areas: "img username";
   align-items: center;
   gap: 10px;
 }

@@ -18,19 +18,19 @@
     <header class="@ViewBag.ClassHeader spacing">
         <ul class="navbar_list">
             <li class="brand_name">
-                <a class="white_text" asp-action="Home">SECURITY DASHBOARD</a>
+                <a class="white_text" asp-controller="Dashboard" asp-action="Home">SECURITY DASHBOARD</a>
             </li>
             <li>
                 <ul class="page_links">
-                    <li><a class="@ViewBag.ClassHome white_text" asp-action="Home">Home</a></li>
-                    <li><a class="@ViewBag.ClassAboutUs white_text" asp-action="AboutUs">About us</a></li>
+                    <li><a class="@ViewBag.ClassHome white_text" asp-controller="Dashboard" asp-action="Home">Home</a></li>
+                    <li><a class="@ViewBag.ClassAboutUs white_text" asp-controller="Dashboard" asp-action="AboutUs">About us</a></li>
                     <li class="profile">
                         <div class="profile_pic_container" id="profileButton">
                             <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
                         </div>
                         <div class="profile_options info_card" id="profileOptions">
                             <p id="username">Admin</p>
-                            <a class="button" asp-action="Index">Sign Out</a>
+                            <a class="button" asp-controller="Account" asp-action="LogOut">Sign Out</a>
                         </div>
                     </li>
                 </ul>

@@ -1,38 +1,36 @@
 ﻿<Properties StartupConfiguration="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}|http">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/Controllers/DashboardController.cs">
     <Files>
-      <File FileName="SecurityDashboard/Controllers/HomeController.cs" Line="32" Column="2" />
-      <File FileName="SecurityDashboard/Views/Home/Index.cshtml" Line="3" Column="36" />
-      <File FileName="SecurityDashboard/Views/Shared/_Layout.cshtml" Line="26" Column="88" />
-      <File FileName="SecurityDashboard/Views/Home/Home.cshtml" Line="73" Column="59" />
-      <File FileName="SecurityDashboard/Models/System.cs" Line="7" Column="13" />
-      <File FileName="SecurityDashboard/Controllers/SystemController.cs" Line="19" Column="1" />
-      <File FileName="SecurityDashboard/Views/Home/AboutUs.cshtml" Line="1" Column="1" />
-      <File FileName="SecurityDashboard/Models/User.cs" Line="24" Column="2" />
-      <File FileName="SecurityDashboard/Views/User/Index.cshtml" Line="1" Column="1" />
-      <File FileName="SecurityDashboard/Controllers/UserController.cs" Line="12" Column="27" />
-      <File FileName="SecurityDashboard/Views/User/ViewUsers.cshtml" Line="10" Column="47" />
+      <File FileName="SecurityDashboard/Controllers/HomeController.cs" Line="62" Column="6" />
+      <File FileName="SecurityDashboard/Views/User/ViewUsers.cshtml" />
+      <File FileName="SecurityDashboard/Program.cs" Line="35" Column="1" />
+      <File FileName="SecurityDashboard/Models/Sensor.cs" Line="10" Column="51" />
+      <File FileName="SecurityDashboard/Models/History.cs" Line="31" Column="39" />
+      <File FileName="SecurityDashboard/Models/AlertSystem.cs" Line="12" Column="67" />
+      <File FileName="SecurityDashboard/ViewModels/DashboardViewModel.cs" Line="25" Column="6" />
+      <File FileName="SecurityDashboard/Data/DataContext.cs" Line="14" Column="70" />
+      <File FileName="SecurityDashboard/Services/SensorCalculator.cs" Line="22" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecurityDashboard" expanded="True">
             <Node name="SecurityDashboard">
-              <Node name="Controllers">
-                <Node name="UserController.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="DashboardController.cs" selected="True" />
               </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Views">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

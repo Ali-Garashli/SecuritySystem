@@ -62,9 +62,9 @@ body {
 #sign_in_form .input_box:focus {
   outline: none;
 }
-#sign_in_form .error_msg {
-  color: red;
-  text-align: center;
+#sign_in_form .error_msg, #sign_in_form .error_msg li {
+    color: red;
+    text-align: center;
 }
 #sign_in_form .create_account {
   color: grey;

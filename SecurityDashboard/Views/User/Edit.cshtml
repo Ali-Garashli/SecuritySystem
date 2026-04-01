@@ -1,0 +1,34 @@
+﻿@model EditUserViewModel
+
+@{
+    ViewData["Title"] = "Edit user";
+}
+
+@section CssLink {
+    <link rel="stylesheet" href="~/css/sign_in.css">
+}
+
+<main>
+    <form method="post" asp-action="Edit" enctype="multipart/form-data" id="sign_in_form" class="info_card">
+        <input asp-for="Id" type="hidden"/>
+
+        <div class="profile_pic_container">
+            <input asp-for="ProfilePicture" class="img_upload" type="file" accept="image/*">
+            <img class="profile_pic" src="../img/profile_pic_icon.png" alt="profile picture">
+        </div>
+        <span asp-validation-for="ProfilePicture" class="error_msg"></span>
+
+        <input asp-for="Username" type="text" class="input_box" placeholder="Username">
+        <span asp-validation-for="Username" class="error_msg"></span>
+
+        <input asp-for="Password" type="password" class="input_box" placeholder="New Password">
+        <span asp-validation-for="Password" class="error_msg"></span>
+
+        <input asp-for="RepeatPassword" type="password" class="input_box" placeholder="Repeat password">
+        <span asp-validation-for="RepeatPassword" class="error_msg"></span>
+
+        <div asp-validation-summary="All" class="error_msg"></div>
+
+        <button class="button">Save Changes</button>
+    </form>
+</main>

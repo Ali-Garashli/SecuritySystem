@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y8qnqvI8yK1dtOq8fjoZekHqadCB65sMXHz14HyzoTQ=",
+  "Hash": "JgselyDW1RLOlitT/HScNJsMqKhGl2jws+5cVG1o3C0=",
   "Source": "SecurityDashboard",
   "BasePath": "_content/SecurityDashboard",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg",
+      "SourceId": "SecurityDashboard",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/",
+      "BasePath": "_content/SecurityDashboard",
+      "RelativePath": "img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg"
     },
     {
       "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/arduino_board.png",

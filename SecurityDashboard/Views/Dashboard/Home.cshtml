@@ -3,6 +3,14 @@
 @{
     ViewData["Title"] = "Home";
     ViewBag.ClassHome = "highlighted";
+
+    string StateClass(SensorState? state) => state switch
+    {
+        SensorState.Safe => "status_safe",
+        SensorState.Unsafe => "status_unsafe",
+        SensorState.Dangerous => "status_dangerous",
+        _ => "status_none"
+    };
 }
 
 @section CssLink {
@@ -14,6 +22,16 @@
 }
 
 <main>
+    @if (TempData["SystemMessage"] is string msg)
+    {
+        <div class="system_banner @Model.SystemStatusClass" id="systemBanner">
+            <p class="system_banner_msg">@msg</p>
+            <button class="system_banner_close" id="bannerCloseButton">
+                &#x2715;
+            </button>
+        </div>
+    }
+
     <!-- SENSORS -->
     <section id="sensors" class="info_card">
         <h3 class="card_title">Sensors</h3>
@@ -25,18 +43,36 @@
             </li>
             <li class="sensor_info">
                 <p>Gas</p>
-                <p>139</p>
-                <p class="status_dangerous">Dangerous</p>
+                <p id="reading-gas">
+                    @(Model.GasReading != null
+                        ? $"{Model.GasReading.ReadingValue} {Model.GasReading.Unit}"
+                        : "-")
+                </p>
+                <p id="status-gas" class="@StateClass(Model.GasReading?.State)">
+                    @(Model.GasReading?.State.ToString() ?? "No data")
+                </p>
             </li>
             <li class="sensor_info">
                 <p>Flame</p>
-                <p>104</p>
-                <p class="status_safe">Safe</p>
+                <p id="reading-flame">
+                    @(Model.FlameReading != null
+                        ? $"{Model.FlameReading.ReadingValue} {Model.FlameReading.Unit}"
+                        : "-")
+                </p>
+                <p id="status-flame" class="@StateClass(Model.FlameReading?.State)">
+                    @(Model.FlameReading?.State.ToString() ?? "No data")
+                </p>
             </li>
             <li class="sensor_info">
                 <p>Motion</p>
-                <p>96</p>
-                <p class="status_safe">Safe</p>
+                <p id="reading-motion">
+                    @(Model.MotionReading != null
+                        ? $"{Model.MotionReading.ReadingValue} {Model.MotionReading.Unit}"
+                        : "-")
+                </p>
+                <p id="status-motion" class="@StateClass(Model.MotionReading?.State)">
+                    @(Model.MotionReading?.State.ToString() ?? "No data")
+                </p>
             </li>
         </ul>
     </section>
@@ -47,20 +83,49 @@
             <h3 class="card_title">System</h3>
 
             <div class="disarm_container">
-                <button class="serious_button button" name="button" id="disarmButton">Disarm System</button>
-                <label class="disarm_label" for="button">* The alarm will not trigger when the system disarmed</label>
+                <button class="button @(Model.SystemStatus.IsArmed
+                                            ? "serious_button"
+                                            : "unserious_button")"
+                        id="disarmButton"
+                        data-armed="@Model.SystemStatus.IsArmed.ToString().ToLower()">
+                    @Model.ToggleButtonLabel
+                </button>
+                <label class="disarm_label" for="disarmButton">
+                    @if (Model.SystemStatus.IsArmed) {
+                        <text>* The alarm will not trigger when the system is disarmed</text>
+                    }
+                    else {
+                        <text>* System is currently disarmed — alerts and logging are suspended</text>
+                    }
+                </label>
             </div>
         </section>
 
         <div id="dialogContainer">
             <dialog id="dialogWindow" class="info_card">
-                <p>Are you sure you want to disarm the system?</p>
-                <form method="post" asp-action="Home" class="dialog_buttons">
-                    <button value="false" name="cancel" id="cancelDialogButton" class="button">
+                @if (Model.SystemStatus.IsArmed) {
+                    <p>Are you sure you want to <b>disarm</b> the system?</p>
+                    <p class="dialog_subtitle">
+                        Alerts and history logging will be suspended until armed again.
+                    </p>
+                }
+                else {
+                    <p>Are you sure you want to <b>arm</b> the system?</p>
+                    <p class="dialog_subtitle">
+                        Alerts and history logging will be activated immediately.
+                    </p>
+                }
+
+
+                <form method="post" asp-controller="System" asp-action="Toggle" class="dialog_buttons">
+                    @Html.AntiForgeryToken()
+
+                    <button value="false" name="cancel" id="cancelDialogButton" class="button" type="button">
                         Cancel
                     </button>
                     <button value="true" name="confirm" type="submit"
-                            id="confirmDialogButton" class="serious_button button">
+                            id="confirmDialogButton"
+                            class="serious_button button">
                         Confirm
                     </button>
                 </form>
@@ -92,31 +157,21 @@
             <p>Status</p>
         </div>
 
-        <ol class="info_list">
-            <li class="history_item">
-                <p>2026-03-03 10:34:29</p>
-                <p>Gas</p>
-                <p>194</p>
-                <p>Unsafe</p>
-            </li>
-            <li class="history_item">
-                <p>2026-03-04 08:38:07</p>
-                <p>Flame</p>
-                <p>200</p>
-                <p>Unsafe</p>
-            </li>
-            <li class="history_item">
-                <p>2026-02-28 14:47:22</p>
-                <p>Gas</p>
-                <p>200</p>
-                <p>Dangerous</p>
-            </li>
-            <li class="history_item">
-                <p>2026-03-03 10:34:29</p>
-                <p>Gas</p>
-                <p>194</p>
-                <p>Unsafe</p>
-            </li>
-        </ol>
+        @if (!Model.RecentAlerts.Any()) {
+            <p>There are no recorded alerts yet.</p>
+        }
+        else {
+            <ol class="info_list">
+                @foreach (History historyItem in Model.RecentAlerts)
+                    {
+                    <li class="history_item">
+                        <p>@historyItem.ReadingTime</p>
+                        <p>@historyItem.SensorType.ToString()</p>
+                        <p>@historyItem.ReadingValue @historyItem.Unit</p>
+                        <p class="@historyItem.StateClass">@historyItem.State.ToString()</p>
+                    </li>
+                    }
+            </ol>
+        }
     </section>
 </main>

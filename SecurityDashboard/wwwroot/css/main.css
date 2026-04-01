@@ -48,6 +48,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.status_none {
+  color: grey;
+}
+
 .status_safe {
   color: green;
 }
@@ -93,6 +97,20 @@ body {
 .serious_button:active {
   transition: all 1ms linear;
   background-color: rgb(139.08, 50.4266666667, 43.92);
+}
+
+.unserious_button {
+    background-color: #4FAE32;
+}
+
+.unserious_button:hover {
+    cursor: pointer;
+    background-color: #459A2B;
+}
+
+.unserious_button:active {
+    transition: all 1ms linear;
+    background-color: #3B8624;
 }
 
 .card_title {

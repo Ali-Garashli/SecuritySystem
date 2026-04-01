@@ -35,12 +35,12 @@ namespace SecurityDashboard.Controllers {
             if (sensor == null)
                 // create sensor if it doesn't exist
                 _dataContext.Sensors.Add(new Sensor {
-                                                SensorType = dto.SensorType,
-                                                ReadingValue = dto.ReadingValue,
-                                                Unit = unit,
-                                                State = state,
-                                                ReadingTime = now
-                                            });
+                    SensorType = dto.SensorType,
+                    ReadingValue = dto.ReadingValue,
+                    Unit = unit,
+                    State = state,
+                    ReadingTime = now
+                });
             else {
                 sensor.ReadingValue = dto.ReadingValue;
                 sensor.Unit = unit;
@@ -53,12 +53,12 @@ namespace SecurityDashboard.Controllers {
                 AlertSystem? system = await _dataContext.AlertSystems.FindAsync(1);
                 if (system?.IsArmed == true)
                     _dataContext.SensorHistories.Add(new History {
-                                                            SensorType = dto.SensorType,
-                                                            ReadingValue = dto.ReadingValue,
-                                                            Unit = unit,
-                                                            State = state,
-                                                            ReadingTime = now
-                                                        });
+                        SensorType = dto.SensorType,
+                        ReadingValue = dto.ReadingValue,
+                        Unit = unit,
+                        State = state,
+                        ReadingTime = now
+                    });
             }
 
             await _dataContext.SaveChangesAsync();
@@ -67,13 +67,13 @@ namespace SecurityDashboard.Controllers {
             bool systemArmed = (await _dataContext.AlertSystems.FindAsync(1))?.IsArmed ?? true;
 
             return Ok(new {
-                        sensor = dto.SensorType.ToString(),
-                        rawValue = dto.ReadingValue,
-                        state = state.ToString(),
-                        unit,
-                        recordedAt = now,
-                        systemArmed
-                     });
+                sensor = dto.SensorType.ToString(),
+                rawValue = dto.ReadingValue,
+                state = state.ToString(),
+                unit,
+                recordedAt = now,
+                systemArmed
+            });
         }
 
         private static object MapToDto(Sensor sensor) => new {
@@ -84,11 +84,11 @@ namespace SecurityDashboard.Controllers {
             state = (int)sensor.State,
             stateName = sensor.State.ToString(),
             stateClass = sensor.State switch {
-                                        SensorState.Safe => "state-safe",
-                                        SensorState.Unsafe => "state-unsafe",
-                                        SensorState.Dangerous => "state-dangerous",
-                                        _ => string.Empty
-                                    },
+                SensorState.Safe => "state-safe",
+                SensorState.Unsafe => "state-unsafe",
+                SensorState.Dangerous => "state-dangerous",
+                _ => string.Empty
+            },
             recordedAt = sensor.ReadingTime
         };
 

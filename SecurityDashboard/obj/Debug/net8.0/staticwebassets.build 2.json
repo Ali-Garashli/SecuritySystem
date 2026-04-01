@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YuaLRwiX4B1eRZqjEr/vljpvragCuBksF3BHXpF1x0s=",
+  "Hash": "JgselyDW1RLOlitT/HScNJsMqKhGl2jws+5cVG1o3C0=",
   "Source": "SecurityDashboard",
   "BasePath": "_content/SecurityDashboard",
   "Mode": "Default",
@@ -188,25 +188,6 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg",
-      "SourceId": "SecurityDashboard",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/",
-      "BasePath": "_content/SecurityDashboard",
-      "RelativePath": "img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg"
-    },
-    {
       "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg",
       "SourceId": "SecurityDashboard",
       "SourceType": "Discovered",
@@ -224,25 +205,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg"
-    },
-    {
-      "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg",
-      "SourceId": "SecurityDashboard",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/",
-      "BasePath": "_content/SecurityDashboard",
-      "RelativePath": "img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg"
     },
     {
       "Identity": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/arduino_board.png",

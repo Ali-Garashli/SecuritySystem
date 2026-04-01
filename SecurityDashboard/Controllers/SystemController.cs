@@ -15,6 +15,7 @@ namespace SecurityDashboard.Controllers {
         public SystemController(DataContext dataContext)
             => _dataContext = dataContext;
 
+        // function for checking if the alert ssystem exists
         private async Task<AlertSystem> CheckSystemRowAsync() {
             var system = await _dataContext.AlertSystems.FindAsync(1);
 
@@ -27,6 +28,7 @@ namespace SecurityDashboard.Controllers {
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Toggle() {
             var system = await CheckSystemRowAsync();
 
@@ -39,7 +41,7 @@ namespace SecurityDashboard.Controllers {
                 ? "System has been ARMED. Monitoring and alerts are active."
                 : "System has been DISARMED. Alerts and logging are suspended.";
 
-            return RedirectToAction("Index", "Dashboard");
+            return RedirectToAction("Home", "Dashboard");
         }
 
         // for arduino to check system status

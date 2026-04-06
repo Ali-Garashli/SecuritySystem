@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> _userManager
+
+@{
+    var currentUser = await _userManager.GetUserAsync(User);
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -26,10 +33,15 @@
                     <li><a class="@ViewBag.ClassAboutUs white_text" asp-controller="Dashboard" asp-action="AboutUs">About us</a></li>
                     <li class="profile">
                         <div class="profile_pic_container" id="profileButton">
-                            <img class="profile_pic" src="~/img/profile_pic_icon.png" alt="profile picture">
+                            <img class="profile_pic"
+                                 src="@(currentUser?.ProfilePicturePath != null 
+                                        ? "./img/" + currentUser.ProfilePicturePath
+                                        : "./img/profile_pic_icon.png")"
+                                 alt="profile picture">
                         </div>
                         <div class="profile_options info_card" id="profileOptions">
-                            <p id="username">Admin</p>
+                            <p id="username">@(currentUser?.UserName ?? "User")</p>
+                            <p id="username">@(currentUser?.Email ?? "No mail")</p>
                             <a class="button" asp-controller="Account" asp-action="LogOut">Sign Out</a>
                         </div>
                     </li>

@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/SecurityDashboard.csproj": {}
+    "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj": {}
   },
   "projects": {
-    "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/SecurityDashboard.csproj": {
+    "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/SecurityDashboard.csproj",
+        "projectUniqueName": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj",
         "projectName": "SecurityDashboard",
-        "projectPath": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/SecurityDashboard.csproj",
-        "packagesPath": "/Users/betik/.nuget/packages/",
-        "outputPath": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/obj/",
+        "projectPath": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj",
+        "packagesPath": "/home/zaughlee/.nuget/packages/",
+        "outputPath": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/betik/.nuget/NuGet/NuGet.Config"
+          "/home/zaughlee/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,7 +33,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -70,6 +77,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

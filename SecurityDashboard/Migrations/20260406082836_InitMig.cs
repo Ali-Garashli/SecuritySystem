@@ -47,6 +47,7 @@ namespace SecurityDashboard.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ProfilePicturePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -207,7 +208,7 @@ namespace SecurityDashboard.Migrations
             migrationBuilder.InsertData(
                 table: "SystemStatus",
                 columns: new[] { "Id", "IsArmed", "SwitchedTime" },
-                values: new object[] { 1, true, new DateTime(2026, 3, 30, 20, 41, 30, 85, DateTimeKind.Local).AddTicks(3200) });
+                values: new object[] { 1, true, new DateTime(2026, 4, 6, 12, 28, 36, 460, DateTimeKind.Local).AddTicks(8138) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AlertHistories_ReadingTime",

@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -9,55 +11,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SecurityDashboard
 build_property.RootNamespace = SecurityDashboard
-build_property.ProjectDir = /Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/
+build_property.ProjectDir = /home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard
+build_property.MSBuildProjectDirectory = /home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Account/SignIn.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Account/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Dashboard/AboutUs.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Dashboard/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0Fib3V0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Dashboard/Home.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Dashboard/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0hvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Partials/_ViewUsersPartial.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Partials/_ViewUsersPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydGlhbHMvX1ZpZXdVc2Vyc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/User/Add.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/User/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/User/Edit.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/User/ViewUsers.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/User/ViewUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9WaWV3VXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/_ViewImports.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/_ViewStart.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/Views/Shared/_Layout.cshtml]
+[/home/zaughlee/Documents/C\# vscode/SecuritySystem-1/SecurityDashboard/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5t66xnfoln

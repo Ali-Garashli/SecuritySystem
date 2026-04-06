@@ -12,8 +12,8 @@ using SecurityDashboard.Data;
 namespace SecurityDashboard.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20260330171000_AddAppUserModel")]
-    partial class AddAppUserModel
+    [Migration("20260406082836_InitMig")]
+    partial class InitMig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -181,7 +181,7 @@ namespace SecurityDashboard.Migrations
                         {
                             Id = 1,
                             IsArmed = true,
-                            SwitchedTime = new DateTime(2026, 3, 30, 21, 9, 59, 966, DateTimeKind.Local).AddTicks(4840)
+                            SwitchedTime = new DateTime(2026, 4, 6, 12, 28, 36, 460, DateTimeKind.Local).AddTicks(8138)
                         });
                 });
 

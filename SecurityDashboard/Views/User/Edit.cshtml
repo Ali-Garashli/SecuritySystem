@@ -10,7 +10,7 @@
 
 <main>
     <form method="post" asp-action="Edit" enctype="multipart/form-data" id="sign_in_form" class="info_card">
-        <input asp-for="Id" type="hidden"/>
+        <input asp-for="Id" type="hidden" />
 
         <div class="profile_pic_container">
             <input asp-for="ProfilePicture" class="img_upload" type="file" accept="image/*">
@@ -18,6 +18,8 @@
         </div>
 
         <input asp-for="Username" type="text" class="input_box" placeholder="Username">
+
+        <input asp-for="Email" type="text" class="input_box" placeholder="Email">
 
         <input asp-for="Password" type="password" class="input_box" placeholder="New Password">
 

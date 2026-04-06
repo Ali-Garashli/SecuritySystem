@@ -38,7 +38,8 @@ namespace SecurityDashboard.Controllers {
                 return View(model);
 
             AppUser user = new() {
-                UserName = model.Username
+                UserName = model.Username,
+                Email = model.Email
             };
 
             // add profile picture
@@ -68,8 +69,28 @@ namespace SecurityDashboard.Controllers {
         }
 
         [HttpGet]
-        public IActionResult ViewUsers() {
-            return View(_userManager.Users.ToList());
+        public async Task<IActionResult> ViewUsers() {
+            Dictionary<AppUser, bool> usersRoles = new();
+
+            foreach (AppUser user in _userManager.Users.ToList())
+                usersRoles.Add(user, await _userManager.IsInRoleAsync(user, "Admin"));
+
+            return View(usersRoles);
+        }
+
+        public async Task<IActionResult> FilterUsers(string searchTerm) {
+            List<AppUser> users = _userManager.Users.ToList();
+            // filter users
+            if (!string.IsNullOrEmpty(searchTerm))
+                users = users.Where(u => (u.NormalizedUserName ?? "").Contains(searchTerm.ToUpper()) ||
+                                         (u.NormalizedEmail ?? "").Contains(searchTerm.ToUpper()))
+                             .ToList();
+
+            Dictionary<AppUser, bool> usersRoles = new();
+            foreach (AppUser user in users)
+                usersRoles.Add(user, await _userManager.IsInRoleAsync(user, "Admin"));
+
+            return PartialView("../Partials/_ViewUsersPartial", usersRoles);
         }
 
         [HttpGet]
@@ -82,6 +103,7 @@ namespace SecurityDashboard.Controllers {
                 Id = user.Id,
                 ProfilePicturePath = user.ProfilePicturePath,
                 Username = user.UserName,
+                Email = user.Email
             };
 
             return View(userViewModel);
@@ -106,6 +128,9 @@ namespace SecurityDashboard.Controllers {
             // update name if provided
             if (!string.IsNullOrEmpty(model.Username))
                 user.UserName = model.Username;
+
+            if (!string.IsNullOrEmpty(model.Email))
+                user.Email = model.Email;
 
             // update profile picture if provided
             if (model.ProfilePicture != null) {
@@ -139,10 +164,12 @@ namespace SecurityDashboard.Controllers {
 
         public async Task<IActionResult> Delete(string id) {
             AppUser? user = await _userManager.FindByIdAsync(id ?? "");
+
             if (user == null)
                 return NotFound();
 
-            await _userManager.DeleteAsync(user);
+            if (!await _userManager.IsInRoleAsync(user, "Admin"))
+                await _userManager.DeleteAsync(user);
 
             return RedirectToAction("ViewUsers");
         }

@@ -17,13 +17,16 @@ namespace SecurityDashboard.Data {
 
             // create admin user
             string adminUsername = "admin";
-            var adminPassword = "P@ssw0rd";
+            string adminPassword = "P@ssw0rd";
+            string adminEmail = "aligarashin@gmail.com";
 
-            var adminUser = await userManager.FindByNameAsync(adminUsername);
+            AppUser? adminUser = await userManager.FindByNameAsync(adminUsername);
 
             if (adminUser == null) {
                 adminUser = new() {
                     UserName = adminUsername,
+                    Email = adminEmail,
+                    EmailConfirmed = true
                 };
 
                 await userManager.CreateAsync(adminUser, adminPassword);

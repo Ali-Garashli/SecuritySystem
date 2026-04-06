@@ -1,41 +1,36 @@
 ﻿<Properties StartupConfiguration="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}|http">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/Controllers/DashboardController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/wwwroot/css/home.css">
     <Files>
-      <File FileName="SecurityDashboard/Controllers/HomeController.cs" Line="62" Column="6" />
-      <File FileName="SecurityDashboard/Views/User/ViewUsers.cshtml" />
-      <File FileName="SecurityDashboard/Program.cs" Line="35" Column="1" />
-      <File FileName="SecurityDashboard/Models/Sensor.cs" Line="10" Column="51" />
-      <File FileName="SecurityDashboard/Models/History.cs" Line="31" Column="39" />
-      <File FileName="SecurityDashboard/Models/AlertSystem.cs" Line="12" Column="67" />
-      <File FileName="SecurityDashboard/ViewModels/DashboardViewModel.cs" Line="25" Column="6" />
-      <File FileName="SecurityDashboard/Data/DataContext.cs" Line="14" Column="70" />
-      <File FileName="SecurityDashboard/Services/SensorCalculator.cs" Line="22" Column="41" />
+      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="28" Column="63" />
+      <File FileName="SecurityDashboard/Data/DataContext.cs" Line="26" Column="57" />
+      <File FileName="SecurityDashboard/Views/Dashboard/Home.cshtml" Line="24" Column="7" />
+      <File FileName="SecurityDashboard/wwwroot/css/home.css" Line="134" Column="1" />
+      <File FileName="SecurityDashboard/wwwroot/js/home.js" Line="98" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SecurityDashboard" expanded="True">
-            <Node name="SecurityDashboard">
-              <Node name="Controllers" expanded="True">
-                <Node name="DashboardController.cs" selected="True" />
+          <Node name="SecurityDashboard">
+            <Node name="SecurityDashboard" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Dashboard" expanded="True" />
               </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

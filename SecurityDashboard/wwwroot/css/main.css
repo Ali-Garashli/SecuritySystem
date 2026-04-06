@@ -220,4 +220,12 @@ header .navbar_list .page_links .profile .profile_options p {
   gap: 20px;
 }
 
+.copyright {
+    color: grey;
+
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */

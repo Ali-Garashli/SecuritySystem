@@ -40,6 +40,10 @@
 
     @RenderBody()
 
+    <footer>
+        <p class="copyright">&copy; @DateTime.Now.Year Security Dashboard. All rights reserved.</p>
+    </footer>
+
     @RenderSection("Script", required: false)
     <script src="~/js/index.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

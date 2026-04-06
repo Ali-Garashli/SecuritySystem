@@ -35,3 +35,25 @@ confirmDialogButton.addEventListener("click", () => {
         selectedUserId = null;
     }
 });
+
+
+// SEARCH BAR
+document.addEventListener("DOMContentLoaded", () => {
+    let search = document.getElementById("searchBar");
+
+    search.addEventListener("input", async (event) => {
+        if (!event.target.value.match(/^[A-Za-z]+$/)) // ignores non alpha characters
+            search.value = search.value.replace(/[^a-zA-Z]/g, '');
+
+        let response = await fetch(`/User/FilterUsers?searchTerm=${search.value}`);
+        let html = await response.text();
+
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(html, "text/html");
+
+        let newUsersList = doc.getElementById("usersList");
+        let currentUsersList = document.getElementById("usersList");
+
+        currentUsersList.replaceChildren(...newUsersList.children);
+    });
+});

@@ -4177,25 +4177,24 @@
     ]
   },
   "packageFolders": {
-    "/home/zaughlee/.nuget/packages/": {}
+    "/Users/betik/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj",
+      "projectUniqueName": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/SecurityDashboard.csproj",
       "projectName": "SecurityDashboard",
-      "projectPath": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/SecurityDashboard.csproj",
-      "packagesPath": "/home/zaughlee/.nuget/packages/",
-      "outputPath": "/home/zaughlee/Documents/C# vscode/SecuritySystem-1/SecurityDashboard/obj/",
+      "projectPath": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/SecurityDashboard.csproj",
+      "packagesPath": "/Users/betik/.nuget/packages/",
+      "outputPath": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/zaughlee/.nuget/NuGet/NuGet.Config"
+        "/Users/betik/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4208,13 +4207,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "10.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4252,20 +4245,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4274,7 +4253,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/wwwroot/css/home.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/Controllers/SensorController.cs">
     <Files>
-      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="28" Column="63" />
-      <File FileName="SecurityDashboard/Data/DataContext.cs" Line="26" Column="57" />
-      <File FileName="SecurityDashboard/Views/Dashboard/Home.cshtml" Line="24" Column="7" />
-      <File FileName="SecurityDashboard/wwwroot/css/home.css" Line="134" Column="1" />
-      <File FileName="SecurityDashboard/wwwroot/js/home.js" Line="98" Column="1" />
+      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="101" Column="10" />
+      <File FileName="SecurityDashboard/Data/DataContext.cs" />
+      <File FileName="SecurityDashboard/Views/Dashboard/Home.cshtml" />
+      <File FileName="SecurityDashboard/wwwroot/css/home.css" Line="124" Column="33" />
+      <File FileName="SecurityDashboard/wwwroot/js/home.js" />
+      <File FileName="SecurityDashboard/Views/Shared/_Layout.cshtml" Line="39" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SecurityDashboard">
-            <Node name="SecurityDashboard" expanded="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="SecurityDashboard">
+              <Node name="Controllers" expanded="True">
+                <Node name="SensorController.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Dashboard" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
@@ -32,5 +32,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

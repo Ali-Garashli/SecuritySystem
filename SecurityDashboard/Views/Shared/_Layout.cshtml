@@ -35,8 +35,9 @@
                         <div class="profile_pic_container" id="profileButton">
                             <img class="profile_pic"
                                  src="@(currentUser?.ProfilePicturePath != null 
-                                        ? "./img/" + currentUser.ProfilePicturePath
-                                        : "./img/profile_pic_icon.png")"
+                                        ? "~/img/" + currentUser.ProfilePicturePath
+                                        : "~/img/profile_pic_icon.png")"
+                                 asp-append-version="true"
                                  alt="profile picture">
                         </div>
                         <div class="profile_options info_card" id="profileOptions">

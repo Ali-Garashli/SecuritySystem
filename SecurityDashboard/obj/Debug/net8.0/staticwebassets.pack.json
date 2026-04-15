@@ -1,295 +1,299 @@
 {
   "Files": [
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/obj/Debug/net8.0/scopedcss/projectbundle/SecurityDashboard.bundle.scp.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/scopedcss/projectbundle/SecurityDashboard.bundle.scp.css",
       "PackagePath": "staticwebassets/SecurityDashboard.bundle.scp.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/aboutus.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/aboutus.css",
       "PackagePath": "staticwebassets/css/aboutus.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/home.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/home.css",
       "PackagePath": "staticwebassets/css/home.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/main.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/main.css",
       "PackagePath": "staticwebassets/css/main.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/reset.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/reset.css",
       "PackagePath": "staticwebassets/css/reset.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/sign_in.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/sign_in.css",
       "PackagePath": "staticwebassets/css/sign_in.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/css/view_users.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/css/view_users.css",
       "PackagePath": "staticwebassets/css/view_users.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/favicon.ico",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg",
       "PackagePath": "staticwebassets/img/04c0e995-d3b5-4cd9-a547-1f488eb9369a.jpg"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/670823fb-3ff8-4431-ab86-d160d7ac0040.png",
+      "PackagePath": "staticwebassets/img/670823fb-3ff8-4431-ab86-d160d7ac0040.png"
+    },
+    {
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg",
       "PackagePath": "staticwebassets/img/7c295a92-20f8-48e1-a120-edc9b3397062.jpg"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg",
       "PackagePath": "staticwebassets/img/894c7628-66f2-48ef-8d35-1f0e3f3b0f52.jpg"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/arduino_board.png",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/arduino_board.png",
       "PackagePath": "staticwebassets/img/arduino_board.png"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/img/profile_pic_icon.png",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/img/profile_pic_icon.png",
       "PackagePath": "staticwebassets/img/profile_pic_icon.png"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/js/home.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/js/home.js",
       "PackagePath": "staticwebassets/js/home.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/js/index.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/js/index.js",
       "PackagePath": "staticwebassets/js/index.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/js/viewUsers.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/js/viewUsers.js",
       "PackagePath": "staticwebassets/js/viewUsers.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {

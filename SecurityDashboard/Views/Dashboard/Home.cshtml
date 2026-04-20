@@ -158,13 +158,12 @@
         </div>
 
         @if (!Model.RecentAlerts.Any()) {
-            <p>There are no recorded alerts yet.</p>
+            <p id="historyEmpty">There are no recorded alerts yet.</p>
         }
         else {
-            <ol class="info_list">
-                @foreach (History historyItem in Model.RecentAlerts)
-                    {
-                    <li class="history_item">
+            <ol id="historyList" class="info_list">
+                @foreach (History historyItem in Model.RecentAlerts) {
+                    <li class="history_item" data-time="@historyItem.ReadingTime.ToString("o")">
                         <p>@historyItem.ReadingTime</p>
                         <p>@historyItem.SensorType.ToString()</p>
                         <p>@historyItem.ReadingValue @historyItem.Unit</p>

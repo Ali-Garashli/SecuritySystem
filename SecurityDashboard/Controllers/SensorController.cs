@@ -20,6 +20,7 @@ namespace SecurityDashboard.Controllers {
 
         [HttpPost("reading")]
         public async Task<IActionResult> SubmitReading([FromBody] SensorReadingDto dto) {
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -115,7 +116,22 @@ namespace SecurityDashboard.Controllers {
             return Ok(MapToDto(sensor));
         }
 
-        
+        [HttpGet("history")]
+        public async Task<IActionResult> GetHistory() {
+            List<History> history = await _dataContext.SensorHistories.AsNoTracking()
+                                                                      .OrderByDescending(h => h.ReadingTime)
+                                                                      .Take(50)
+                                                                      .ToListAsync();
+
+            return Ok(history.Select(h => new {
+                readingTime = h.ReadingTime,
+                sensorType = h.SensorType.ToString(),
+                readingValue = h.ReadingValue,
+                unit = h.Unit,
+                state = h.State.ToString(),
+                stateClass = h.StateClass
+            }));
+        }
     }
 }
 

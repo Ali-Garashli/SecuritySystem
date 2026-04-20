@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1706.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityDashboard", "SecurityDashboard\SecurityDashboard.csproj", "{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{C082AB71-01CB-48DD-A22E-ED3D897C6136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialBridge", "Bridge\SerialBridge.csproj", "{A0193624-CC72-492A-82DD-34A63F9FBDDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,18 @@ Global
 		{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0193624-CC72-492A-82DD-34A63F9FBDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0193624-CC72-492A-82DD-34A63F9FBDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0193624-CC72-492A-82DD-34A63F9FBDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0193624-CC72-492A-82DD-34A63F9FBDDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25ED08E0-D82A-4E98-BB77-8676B32AFB5C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0193624-CC72-492A-82DD-34A63F9FBDDE} = {C082AB71-01CB-48DD-A22E-ED3D897C6136}
 	EndGlobalSection
 EndGlobal

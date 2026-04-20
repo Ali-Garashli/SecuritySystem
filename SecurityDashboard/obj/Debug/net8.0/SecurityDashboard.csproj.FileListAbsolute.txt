@@ -583,11 +583,6 @@
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/SecurityDashboard.sourcelink.json
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets.build.json
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets.development.json
-/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.SecurityDashboard.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.build.SecurityDashboard.props
-/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SecurityDashboard.props
-/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SecurityDashboard.props
-/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/scopedcss/bundle/SecurityDashboard.styles.css
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/scopedcss/projectbundle/SecurityDashboard.bundle.scp.css
@@ -597,3 +592,8 @@
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/SecurityDashboard.pdb
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/SecurityDashboard.genruntimeconfig.cache
 /Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/ref/SecurityDashboard.dll
+/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.SecurityDashboard.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.build.SecurityDashboard.props
+/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SecurityDashboard.props
+/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SecurityDashboard.props
+/Users/betik/Documents/brogramming/SDP/SecurityDashboard 1.2/SecurityDashboard/obj/Debug/net8.0/staticwebassets.pack.json

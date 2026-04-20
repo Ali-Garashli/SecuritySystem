@@ -1,29 +1,30 @@
 ﻿<Properties StartupConfiguration="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}|http">
+  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SecurityDashboard/Controllers/SensorController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bridge/Program.cs">
     <Files>
-      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="101" Column="10" />
-      <File FileName="SecurityDashboard/Data/DataContext.cs" />
-      <File FileName="SecurityDashboard/Views/Dashboard/Home.cshtml" />
-      <File FileName="SecurityDashboard/wwwroot/css/home.css" Line="124" Column="33" />
-      <File FileName="SecurityDashboard/wwwroot/js/home.js" />
-      <File FileName="SecurityDashboard/Views/Shared/_Layout.cshtml" Line="39" Column="74" />
+      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="117" Column="10" />
+      <File FileName="SecurityDashboard/Views/Shared/_Layout.cshtml" />
+      <File FileName="SecurityDashboard/Views/Account/SignIn.cshtml" />
+      <File FileName="SecurityDashboard/Data/DataContext.cs" Line="1" Column="1" />
+      <File FileName="SecurityDashboard/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Bridge/Program.cs" Line="173" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SecurityDashboard">
-            <Node name="SecurityDashboard">
-              <Node name="Controllers" expanded="True">
-                <Node name="SensorController.cs" selected="True" />
-              </Node>
+          <Node name="SecurityDashboard" selected="True">
+            <Node name="Bridge" expanded="True" />
+            <Node name="SecurityDashboard" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="DTO" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
                 <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -31,9 +32,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

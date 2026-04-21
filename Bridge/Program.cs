@@ -61,6 +61,8 @@ catch (Exception ex) {
 // MAIN LOOP
 CancellationTokenSource cancellationTokenSource = new();
 Console.CancelKeyPress += (_, e) => {
+    // prevent sudden cancellation of the program
+    // this let's the loop finish before closing
     e.Cancel = true; cancellationTokenSource.Cancel();
 };
 
@@ -72,7 +74,7 @@ while (!cancellationTokenSource.IsCancellationRequested) {
         line = serial.ReadLine().Trim();
     }
     catch (TimeoutException) {
-        continue; // keep waiting
+        continue; // keep waiting for arduino to connect
     }
     catch (Exception ex) {
         Console.Error.WriteLine($"Serial read error: {ex.Message}");
@@ -107,8 +109,12 @@ while (!cancellationTokenSource.IsCancellationRequested) {
         lastArmedState = armedState;
     }
 
+    bool buzzerActive = await GetBuzzerActiveAsync(http, armedState);
+
     try {
         serial.WriteLine($"A:{(armedState ? 1 : 0)}");
+        serial.WriteLine($"B:{(buzzerActive ? 1 : 0)}");
+        Console.WriteLine($"Bridge -> A:{(armedState ? 1 : 0)}  B:{(buzzerActive ? 1 : 0)}");
     }
     catch (Exception ex) {
         Console.Error.WriteLine($"Serial write error: {ex.Message}");
@@ -119,6 +125,24 @@ Console.WriteLine("Shutting down the bridge.");
 serial.Close();
 
 // EXTRA METHODS
+static async Task<bool> GetBuzzerActiveAsync(HttpClient http, bool fallback) {
+    try {
+        HttpResponseMessage response = await http.PostAsync("api/sensor/buzzer", null);
+        if (!response.IsSuccessStatusCode) return fallback;
+
+        using JsonDocument jsonDocument = await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
+
+        if (jsonDocument.RootElement.TryGetProperty("active", out JsonElement jsonValue))
+            return jsonValue.GetBoolean();
+    }
+    catch (Exception ex) {
+        Console.Error.WriteLine($"Error with buzzer: {ex.Message}");
+    }
+
+    // return default given value if we fail
+    return fallback;
+}
+
 static bool TryParseSensorLine(string line,
                                out int gas,
                                out int flame,
@@ -171,6 +195,7 @@ static async Task<bool> PostSensorAsync(HttpClient http,
         Console.Error.WriteLine($"Error for {sensorType}: {ex.Message}");
     }
 
+    // return default given value if we fail
     return fallbackArmed;
 }
 

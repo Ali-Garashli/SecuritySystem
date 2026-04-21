@@ -116,6 +116,16 @@ namespace SecurityDashboard.Controllers {
             return Ok(MapToDto(sensor));
         }
 
+        [HttpPost("buzzer")]
+        public async Task<IActionResult> GetBuzzerState() {
+            bool isArmed = (await _dataContext.AlertSystems.FindAsync(1))?.IsArmed ?? true;
+
+            bool alertingSensorExists = await _dataContext.Sensors
+                .AnyAsync(s => s.State == SensorState.Dangerous);
+
+            return Ok(new { active = isArmed && alertingSensorExists });
+        }
+
         [HttpGet("history")]
         public async Task<IActionResult> GetHistory() {
             List<History> history = await _dataContext.SensorHistories.AsNoTracking()

@@ -4,8 +4,8 @@ using SecurityDashboard.Models;
 namespace SecurityDashboard.Services {
     public class SensorCalculator {
 
-        const int _gasUnsafeLevel = 100;
-        const int _gasDangerousLevel = 200;
+        const int _gasUnsafeLevel = 250;
+        const int _gasDangerousLevel = 300;
 
         public static SensorState CalculateState(SensorType sensor, int readingValue)
             => sensor switch {

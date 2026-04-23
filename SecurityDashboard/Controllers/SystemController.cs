@@ -15,10 +15,11 @@ namespace SecurityDashboard.Controllers {
         public SystemController(DataContext dataContext)
             => _dataContext = dataContext;
 
-        // function for checking if the alert ssystem exists
+        // function for checking if the alert system exists
         private async Task<AlertSystem> CheckSystemRowAsync() {
-            var system = await _dataContext.AlertSystems.FindAsync(1);
+            AlertSystem? system = await _dataContext.AlertSystems.FindAsync(1);
 
+            // if it doesn't exists, create it
             if (system == null) {
                 system = new AlertSystem { Id = 1, IsArmed = true };
                 _dataContext.AlertSystems.Add(system);
@@ -27,13 +28,17 @@ namespace SecurityDashboard.Controllers {
             return system;
         }
 
+        // toggle system armed state
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Toggle() {
-            var system = await CheckSystemRowAsync();
+            AlertSystem system = await CheckSystemRowAsync();
 
             system.IsArmed = !system.IsArmed;
             system.SwitchedTime = DateTime.Now;
+
+            // if system is armed, enable motion and vice versa
+            system.MotionIsDisabled = !system.IsArmed;
 
             await _dataContext.SaveChangesAsync();
 
@@ -44,16 +49,42 @@ namespace SecurityDashboard.Controllers {
             return RedirectToAction("Home", "Dashboard");
         }
 
+        // toggle motion sensor
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ToggleMotion() {
+            AlertSystem system = await CheckSystemRowAsync();
+
+            // toggle motion only if system is armed
+            if (system.IsArmed) {
+                system.MotionIsDisabled = !system.MotionIsDisabled;
+                system.SwitchedTime = DateTime.Now;
+
+                await _dataContext.SaveChangesAsync();
+
+                TempData["SystemMessage"] = system.MotionIsDisabled
+                    ? "Motion sensor has been DISABLED. Motion alerts and logging are suspended."
+                    : "Motion sensor has been ENABLED. Motion alerts and logging are active.";
+            }
+            else {
+                TempData["SystemMessage"] = "Cannot toggle motion sensor. You must arm the system first.";
+            }
+
+            return RedirectToAction("Home", "Dashboard");
+        }
+
+
         // for arduino to check system status
         [HttpGet]
         [Route("api/system/status")]
         public async Task<IActionResult> GetStatus() {
-            var status = await CheckSystemRowAsync();
+            AlertSystem alertSystem = await CheckSystemRowAsync();
             await _dataContext.SaveChangesAsync();
 
             return Ok(new {
-                          isArmed = status.IsArmed,
-                          lastChangedAt = status.SwitchedTime,
+                          isArmed = alertSystem.IsArmed,
+                          motionIsDisabled = alertSystem.MotionIsDisabled,
+                          lastChangedAt = alertSystem.SwitchedTime,
                       });
         }
     }

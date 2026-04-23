@@ -20,7 +20,6 @@ namespace SecurityDashboard.Controllers {
 
         [HttpPost("reading")]
         public async Task<IActionResult> SubmitReading([FromBody] SensorReadingDto dto) {
-
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -31,7 +30,7 @@ namespace SecurityDashboard.Controllers {
 
             // update sensors
             Sensor? sensor = await _dataContext.Sensors
-                .FirstOrDefaultAsync(r => r.SensorType.Equals(dto.SensorType));
+                .FirstOrDefaultAsync(s => s.SensorType.Equals(dto.SensorType));
 
             if (sensor == null)
                 // create sensor if it doesn't exist
@@ -49,31 +48,34 @@ namespace SecurityDashboard.Controllers {
                 sensor.ReadingTime = now;
             }
 
-            // if system is armed, add to history
-            if (SensorCalculator.IsAlertable(state)) {
-                AlertSystem? system = await _dataContext.AlertSystems.FindAsync(1);
-                if (system?.IsArmed == true)
-                    _dataContext.SensorHistories.Add(new History {
-                        SensorType = dto.SensorType,
-                        ReadingValue = dto.ReadingValue,
-                        Unit = unit,
-                        State = state,
-                        ReadingTime = now
-                    });
+            AlertSystem? system = await _dataContext.AlertSystems.FindAsync(1);
+            bool isArmed = system?.IsArmed ?? true;
+            bool isMotionDisabled = system?.MotionIsDisabled ?? false;
+
+
+            // if system is armed, add to history & is not individually disabled
+            bool sensorDisabled = (dto.SensorType == SensorType.Motion) && isMotionDisabled;
+
+            if (SensorCalculator.IsAlertable(state) && isArmed && sensorDisabled) {
+                _dataContext.SensorHistories.Add(new History {
+                    SensorType = dto.SensorType,
+                    ReadingValue = dto.ReadingValue,
+                    Unit = unit,
+                    State = state,
+                    ReadingTime = now
+                });
             }
 
             await _dataContext.SaveChangesAsync();
 
-            // send system armed state to arduino as json
-            bool systemArmed = (await _dataContext.AlertSystems.FindAsync(1))?.IsArmed ?? true;
-
+            // send system armed state as json
             return Ok(new {
                 sensor = dto.SensorType.ToString(),
                 rawValue = dto.ReadingValue,
                 state = state.ToString(),
                 unit,
                 recordedAt = now,
-                systemArmed
+                isArmed
             });
         }
 
@@ -118,10 +120,13 @@ namespace SecurityDashboard.Controllers {
 
         [HttpPost("buzzer")]
         public async Task<IActionResult> GetBuzzerState() {
-            bool isArmed = (await _dataContext.AlertSystems.FindAsync(1))?.IsArmed ?? true;
+            AlertSystem? alertSystem = await _dataContext.AlertSystems.FindAsync(1);
+            bool isArmed = alertSystem?.IsArmed ?? true;
+            bool motionIsDisabled = alertSystem?.MotionIsDisabled ?? false;
 
             bool alertingSensorExists = await _dataContext.Sensors
-                .AnyAsync(s => s.State == SensorState.Dangerous);
+                .AnyAsync(s => s.State == SensorState.Dangerous &&
+                               !(s.SensorType == SensorType.Motion && motionIsDisabled));
 
             return Ok(new { active = isArmed && alertingSensorExists });
         }

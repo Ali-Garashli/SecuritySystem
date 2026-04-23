@@ -11,17 +11,20 @@ namespace SecurityDashboard.ViewModels {
 
         public IReadOnlyList<History> RecentAlerts { get; set; } = new List<History>();
 
-        // button label
-        public string ToggleButtonLabel => SystemStatus.IsArmed switch {
-                                                true => "Disarm System",
-                                                false => "Arm system"
-                                            };
+        // button labels
+        public string ToggleButtonLabel => SystemStatus.IsArmed
+                                                ? "Disarm System"
+                                                : "Arm system";
 
-        // css class
-        public string SystemStatusClass => SystemStatus.IsArmed switch {
-                                                true => "system-armed",
-                                                false => "system-disarmed"
-                                            };
+        public string MotionToggleButtonLabel => SystemStatus.MotionIsDisabled
+                                                    ? "Enable Motion"
+                                                    : "Disable Motion";
+
+
+        // css classes
+        public string SystemStatusClass => SystemStatus.IsArmed
+                                                ? "system-armed"
+                                                : "system-disarmed";
     }
 }
 

@@ -78,7 +78,8 @@
     </section>
 
     <!-- SYSTEM -->
-    @if (User.IsInRole("Admin")) {
+    @if (User.IsInRole("Admin"))
+    {
         <section id="alarmSystem" class="info_card">
             <h3 class="card_title">System</h3>
 
@@ -91,11 +92,32 @@
                     @Model.ToggleButtonLabel
                 </button>
                 <label class="disarm_label" for="disarmButton">
-                    @if (Model.SystemStatus.IsArmed) {
-                        <text>* The alarm will not trigger when the system is disarmed</text>
+                    @if (Model.SystemStatus.IsArmed)
+                    {
+                        <text>* System is currently armed - alerts and logging are active</text>
                     }
-                    else {
+                    else
+                    {
                         <text>* System is currently disarmed — alerts and logging are suspended</text>
+                    }
+                </label>
+            </div>
+
+            <div class="disarm_container">
+                <button class="button @(Model.SystemStatus.MotionIsDisabled
+                                            ? "unserious_button"
+                                            : "semi_serious_button")"
+                        id="motionToggleButton">
+                    @Model.MotionToggleButtonLabel
+                </button>
+                <label class="disarm_label" for="motionToggleButton">
+                    @if (Model.SystemStatus.MotionIsDisabled)
+                    {
+                        <text>* Motion sensor is disabled — motion alerts and logging are suspended</text>
+                    }
+                    else
+                    {
+                        <text>* Motion sensor is enabled - motion alerts and logging are active</text>
                     }
                 </label>
             </div>
@@ -103,13 +125,15 @@
 
         <div id="dialogContainer">
             <dialog id="dialogWindow" class="info_card">
-                @if (Model.SystemStatus.IsArmed) {
+                @if (Model.SystemStatus.IsArmed)
+                {
                     <p>Are you sure you want to <b>disarm</b> the system?</p>
                     <p class="dialog_subtitle">
                         Alerts and history logging will be suspended until armed again.
                     </p>
                 }
-                else {
+                else
+                {
                     <p>Are you sure you want to <b>arm</b> the system?</p>
                     <p class="dialog_subtitle">
                         Alerts and history logging will be activated immediately.
@@ -120,12 +144,42 @@
                 <form method="post" asp-controller="System" asp-action="Toggle" class="dialog_buttons">
                     @Html.AntiForgeryToken()
 
-                    <button value="false" name="cancel" id="cancelDialogButton" class="button" type="button">
+                    <button name="cancel" id="cancelDialogButton" class="button" type="button">
                         Cancel
                     </button>
-                    <button value="true" name="confirm" type="submit"
+                    <button type="submit"
                             id="confirmDialogButton"
                             class="serious_button button">
+                        Confirm
+                    </button>
+                </form>
+            </dialog>
+        </div>
+
+        <div id="motionDialogContainer">
+            <dialog id="motionDialogWindow" class="info_card">
+                @if (Model.SystemStatus.MotionIsDisabled)
+                {
+                    <p>Are you sure you want to <b>enable</b> the motion sensor?</p>
+                    <p class="dialog_subtitle">
+                        Motion alerts and logging will be activated immediately.
+                    </p>
+                }
+                else
+                {
+                    <p>Are you sure you want to <b>disable</b> the motion sensor?</p>
+                    <p class="dialog_subtitle">
+                        Motion alerts and logging will be suspended. Gas and flame sensors remain active.
+                    </p>
+                }
+
+                <form method="post" asp-controller="System" asp-action="ToggleMotion" class="dialog_buttons">
+                    @Html.AntiForgeryToken()
+
+                    <button id="cancelMotionDialogButton" class="button" type="button">
+                        Cancel
+                    </button>
+                    <button type="submit" class="serious_button button">
                         Confirm
                     </button>
                 </form>
@@ -135,7 +189,8 @@
 
 
     <!-- USER CRUD -->
-    @if (User.IsInRole("Admin")) {
+    @if (User.IsInRole("Admin"))
+    {
         <section id="userCRUD" class="info_card">
             <h3 class="card_title">Users</h3>
 
@@ -157,19 +212,22 @@
             <p>Status</p>
         </div>
 
-        @if (!Model.RecentAlerts.Any()) {
+        @if (!Model.RecentAlerts.Any())
+        {
             <p id="historyEmpty">There are no recorded alerts yet.</p>
         }
-        else {
+        else
+        {
             <ol id="historyList" class="info_list">
-                @foreach (History historyItem in Model.RecentAlerts) {
+                @foreach (History historyItem in Model.RecentAlerts)
+                {
                     <li class="history_item" data-time="@historyItem.ReadingTime.ToString("o")">
                         <p>@historyItem.ReadingTime</p>
                         <p>@historyItem.SensorType.ToString()</p>
                         <p>@historyItem.ReadingValue @historyItem.Unit</p>
                         <p class="@historyItem.StateClass">@historyItem.State.ToString()</p>
                     </li>
-                    }
+                }
             </ol>
         }
     </section>

@@ -12,8 +12,8 @@ using SecurityDashboard.Data;
 namespace SecurityDashboard.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20260406082836_InitMig")]
-    partial class InitMig
+    [Migration("20260422202324_Added_MotionIsDisabled")]
+    partial class Added_MotionIsDisabled
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -169,6 +169,9 @@ namespace SecurityDashboard.Migrations
                     b.Property<bool>("IsArmed")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("MotionIsDisabled")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("SwitchedTime")
                         .HasColumnType("datetime2");
 
@@ -181,7 +184,8 @@ namespace SecurityDashboard.Migrations
                         {
                             Id = 1,
                             IsArmed = true,
-                            SwitchedTime = new DateTime(2026, 4, 6, 12, 28, 36, 460, DateTimeKind.Local).AddTicks(8138)
+                            MotionIsDisabled = false,
+                            SwitchedTime = new DateTime(2026, 4, 23, 0, 23, 23, 981, DateTimeKind.Local).AddTicks(8500)
                         });
                 });
 

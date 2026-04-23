@@ -23,7 +23,7 @@ namespace SecurityDashboard.Services {
             };
 
         public static bool IsAlertable(SensorState state)
-            => state is SensorState.Unsafe or SensorState.Dangerous;
+            => state is SensorState.Dangerous;
 
         static SensorState DetermineGasState(int readingValue) {
             if (readingValue >= _gasDangerousLevel) return SensorState.Dangerous;

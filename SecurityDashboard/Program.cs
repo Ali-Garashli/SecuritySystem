@@ -35,8 +35,8 @@ builder.Services.ConfigureApplicationCookie(options => {
 var app = builder.Build();
 
 // seed user roles
-using (var scope = app.Services.CreateScope()) {
-    var services = scope.ServiceProvider;
+using (IServiceScope scope = app.Services.CreateScope()) {
+    IServiceProvider services = scope.ServiceProvider;
     await IdentitySeeder.SeedAsync(services);
 }
 

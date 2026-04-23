@@ -113,6 +113,20 @@ body {
     background-color: #3B8624;
 }
 
+.semi_serious_button {
+    background-color: #f2aa3e;
+}
+
+.semi_serious_button:hover {
+    cursor: pointer;
+    background-color: #dd8b0f;
+}
+
+.semi_serious_button:active {
+    transition: all 1ms linear;
+    background-color: #be770d;
+}
+
 .card_title {
   font-size: 20px;
   color: #5F2E19;
@@ -200,29 +214,28 @@ header .navbar_list .page_links .profile .profile_options p {
   }
 }
 
-#dialogContainer {
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
-  display: none;
-  align-items: center;
+#dialogContainer, #motionDialogContainer {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
 }
-#dialogContainer #dialogWindow {
-  border: none;
-  position: relative;
-  top: -80px;
+#dialogContainer #dialogWindow, #motionDialogContainer #motionDialogWindow {
+    border: none;
+    position: relative;
+    top: -80px;
 }
-#dialogContainer .dialog_buttons {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+#dialogContainer .dialog_buttons, #motionDialogContainer .dialog_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .copyright {
     color: grey;
-
     position: fixed;
     left: 5px;
     bottom: 5px;

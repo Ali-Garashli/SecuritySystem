@@ -9,6 +9,8 @@ namespace SecurityDashboard.Models {
         [Required]
         public bool IsArmed { get; set; } = true;
 
+        public bool MotionIsDisabled { get; set; } = false;
+
         public DateTime SwitchedTime { get; set; } = DateTime.Now;
     }
 }

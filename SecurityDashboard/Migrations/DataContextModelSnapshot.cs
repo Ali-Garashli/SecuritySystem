@@ -166,6 +166,9 @@ namespace SecurityDashboard.Migrations
                     b.Property<bool>("IsArmed")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("MotionIsDisabled")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("SwitchedTime")
                         .HasColumnType("datetime2");
 
@@ -178,7 +181,8 @@ namespace SecurityDashboard.Migrations
                         {
                             Id = 1,
                             IsArmed = true,
-                            SwitchedTime = new DateTime(2026, 4, 6, 12, 28, 36, 460, DateTimeKind.Local).AddTicks(8138)
+                            MotionIsDisabled = false,
+                            SwitchedTime = new DateTime(2026, 4, 23, 0, 23, 23, 981, DateTimeKind.Local).AddTicks(8500)
                         });
                 });
 

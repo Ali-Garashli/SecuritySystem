@@ -35,7 +35,32 @@ document.body.addEventListener("click", (event) => {
     dialogContainer.style.cssText = "display: none;";
 });
 
-// SENSONRS
+// MOTION TOGGLE DIALOG
+let motionToggleButton = document.getElementById("motionToggleButton");
+let motionDialogContainer = document.getElementById("motionDialogContainer");
+let motionDialogWindow = document.getElementById("motionDialogWindow");
+let cancelMotionDialogButton = document.getElementById("cancelMotionDialogButton");
+
+motionToggleButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    motionDialogContainer.style.cssText = "display: flex;\n" +
+        `height: calc(100vh - ${header[0].clientHeight}px);`;
+});
+
+cancelMotionDialogButton.addEventListener("click", () => {
+    motionDialogContainer.style.cssText = "display: none;";
+});
+
+motionDialogWindow.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
+
+document.body.addEventListener("click", (event) => {
+    motionDialogContainer.style.cssText = "display: none;";
+});
+
+
+// SENSORS
 async function refreshSensors() {
     let readings;
 

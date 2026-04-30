@@ -56,7 +56,7 @@ namespace SecurityDashboard.Controllers {
             // if system is armed, add to history & is not individually disabled
             bool sensorDisabled = (dto.SensorType == SensorType.Motion) && isMotionDisabled;
 
-            if (SensorCalculator.IsAlertable(state) && isArmed && sensorDisabled) {
+            if (SensorCalculator.IsAlertable(state) && isArmed && !sensorDisabled) {
                 _dataContext.SensorHistories.Add(new History {
                     SensorType = dto.SensorType,
                     ReadingValue = dto.ReadingValue,

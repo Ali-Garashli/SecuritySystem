@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SecurityDashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+778f54991a4931262a960c6c5918b3db49cc5ad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2f396a19292d868ee466ba092e1b83718f77901")]
 [assembly: System.Reflection.AssemblyProductAttribute("SecurityDashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SecurityDashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

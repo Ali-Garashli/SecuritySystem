@@ -185,7 +185,7 @@ static async Task<bool> PostSensorAsync(HttpClient http,
         using JsonDocument jsonDocument =
             await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
 
-        if (jsonDocument.RootElement.TryGetProperty("systemArmed", out JsonElement jsonValue))
+        if (jsonDocument.RootElement.TryGetProperty("isArmed", out JsonElement jsonValue))
             return jsonValue.GetBoolean();
     }
     catch (HttpRequestException ex) {

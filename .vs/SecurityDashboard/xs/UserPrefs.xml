@@ -1,42 +1,25 @@
 ﻿<Properties StartupConfiguration="Bridge + Backend">
-  <MonoDevelop.Ide.ItemProperties.Bridge.SerialBridge PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="Bridge + Backend" Name="Bridge + Backend">
-      <Items>
-        <StartupItem ItemId="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}" ItemName="SecurityDashboard" ConfigurationId="http" />
-        <StartupItem ItemId="{A0193624-CC72-492A-82DD-34A63F9FBDDE}" ItemName="SerialBridge" ConfigurationId="Default" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
-  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.Workbench ActiveDocument="Bridge/Program.cs">
     <Files>
-      <File FileName="SecurityDashboard/Controllers/SensorController.cs" Line="139" Column="47" />
-      <File FileName="SecurityDashboard/Controllers/SystemController.cs" Line="1" Column="1" />
-      <File FileName="SecurityDashboard/Models/AlertSystem.cs" Line="13" Column="6" />
-      <File FileName="Bridge/Program.cs" Line="99" Column="1" />
+      <File FileName="SecurityDashboard/Controllers/SensorController.cs" />
+      <File FileName="SecurityDashboard/Views/Dashboard/Home.cshtml" />
+      <File FileName="SecurityDashboard/Controllers/SystemController.cs" />
+      <File FileName="SecurityDashboard/wwwroot/js/home.js" Line="25" Column="1" />
+      <File FileName="Bridge/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SecurityDashboard">
-            <Node name="Bridge">
-              <Node name="SerialBridge" expanded="True" />
-            </Node>
-            <Node name="SecurityDashboard" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="DTO" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Dashboard" expanded="True" />
-                <Node name="Shared" expanded="True" />
+          <Node name="SecurityDashboard" expanded="True">
+            <Node name="Bridge" expanded="True">
+              <Node name="SerialBridge" expanded="True">
+                <Node name="Program.cs" selected="True" />
               </Node>
+            </Node>
+            <Node name="SecurityDashboard">
+              <Node name="Controllers" expanded="True" />
               <Node name="wwwroot" expanded="True">
+                <Node name="img" expanded="True" />
                 <Node name="js" expanded="True" />
               </Node>
             </Node>
@@ -45,7 +28,19 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Bridge.SerialBridge PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Bridge + Backend" Name="Bridge + Backend">
+      <Items>
+        <StartupItem ItemId="{B68B5D5F-4C3A-4EFD-BB3A-D42EE4AF1114}" ItemName="SecurityDashboard" ConfigurationId="http" />
+        <StartupItem ItemId="{A0193624-CC72-492A-82DD-34A63F9FBDDE}" ItemName="SerialBridge" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.SecurityDashboard PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>

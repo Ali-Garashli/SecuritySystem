@@ -16,6 +16,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 bool systemArmed = true; // updated by Bridge (A:)
 bool buzzerServerActive = true; // updated by bridge (B:)
 unsigned long lastSendMs = 0;
+bool bridgeConnected = false; // tracks whether the bridge has responded at least once
 
 // Pending incoming data from bridge
 String bridgeBuffer = "";
@@ -75,26 +76,21 @@ void loop() {
 
     // armed indicator on same line, right side
     lcd.setCursor(11, 0);
-    lcd.print(systemArmed ? "[ARMED]" : "       ");
+    lcd.print(systemArmed ? "ARMED" : "       ");
 
     // line 1 for alert status
     lcd.setCursor(0, 1);
-    switch (true) {
-        case gasAlert && flameAlert:
-            lcd.print("CRITICAL FIRE!  ");
-            break;
-        case gasAlert:
-            lcd.print("Gas Detected    ");
-            break;
-        case flameAlert:
-            lcd.print("Flame Detected  ");
-            break;
-        case motionAlert:
-            lcd.print("Motion Alert!   ");
-            break;
-        default:
-            lcd.print("System Normal   ");
-            break;
+    
+    if (gasAlert && flameAlert) {
+        lcd.print("CRITICAL FIRE!  ");
+    } else if (gasAlert) {
+        lcd.print("Gas Detected    ");
+    } else if (flameAlert) {
+        lcd.print("Flame Detected  ");
+    } else if (motionAlert) {
+        lcd.print("Motion Alert!   ");
+    } else {
+        lcd.print("System Normal   ");
     }
 
     // SEND TO BRIDGE
